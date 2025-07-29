@@ -1,15 +1,12 @@
-# My Portfolio
+<img width="1920" height="1080" alt="Screenshot (106)" src="https://github.com/user-attachments/assets/ab886cb8-1275-43bb-9e10-0024e9d39899" /># My Portfolio
 Welcome to my portfolio! This project showcases my skills, projects, and experiences as a web developer.
 
 ### Weblink: [Live Website](https://aklijoshua.netlify.app)
 ## Some Images:
-<img width="3840" height="1080" alt="pic6" src="https://github.com/user-attachments/assets/2cec6150-304e-44b9-a6f3-80bc0e9fe356" />
-<img width="3840" height="1080" alt="pic5" src="https://github.com/user-attachments/assets/4625735e-290c-44fe-853e-d430551b05b3" />
-<img width="3840" height="1080" alt="pic4" src="https://github.com/user-attachments/assets/12c3962a-5545-46c3-b8b5-e24987f657cc" />
-<img width="3840" height="1080" alt="pic3" src="https://github.com/user-attachments/assets/0d888214-8a82-44f1-b306-e1b99639f4bb" />
-<img width="3840" height="1080" alt="pic2" src="https://github.com/user-attachments/assets/217625fa-59ef-4bb2-af50-e9ce1c32faa1" />
-<img width="3840" height="1080" alt="pic1" src="https://github.com/user-attachments/assets/456f7cad-1c92-4e29-b521-ca889f09c710" />
-
+<img width="1920" height="1080" alt="Screenshot (104)" src="https://github.com/user-attachments/assets/364a0160-9769-4a8a-a3e5-ea0fa1e09b84" /><img width="1920" height="1080" alt="Screenshot (106)" src="https://github.com/user-attachments/assets/f5cbb4ec-cf68-4d6a-b94b-acc8f22069a9" />
+<img width="1920" height="1080" alt="Screenshot (105)" src="https://github.com/user-attachments/assets/c2c5c551-c50d-4663-8bde-33cb02cb251c" />
+<img width="1920" height="1080" alt="Screenshot (103)" src="https://github.com/user-attachments/assets/b4a83c14-0c9a-4fe9-9edf-6fae26e64615" />
+<img width="1920" height="1080" alt="Screenshot (101)" src="https://github.com/user-attachments/assets/454b11f9-cfc8-4b49-b8f6-fff50a343064" />
 
 
 ## Table of Contents
