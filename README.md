@@ -1,8 +1,14 @@
 # My Portfolio
 Welcome to my portfolio! This project showcases my skills, projects, and experiences as a web developer.
 
-### Weblink: [Live Website](https://rishavchanda.netlify.app)
+### Weblink: [Live Website](https://aklijoshua.netlify.app)
 ## Some Images:
+<img width="3840" height="1080" alt="pic6" src="https://github.com/user-attachments/assets/2cec6150-304e-44b9-a6f3-80bc0e9fe356" />
+<img width="3840" height="1080" alt="pic5" src="https://github.com/user-attachments/assets/4625735e-290c-44fe-853e-d430551b05b3" />
+<img width="3840" height="1080" alt="pic4" src="https://github.com/user-attachments/assets/12c3962a-5545-46c3-b8b5-e24987f657cc" />
+<img width="3840" height="1080" alt="pic3" src="https://github.com/user-attachments/assets/0d888214-8a82-44f1-b306-e1b99639f4bb" />
+<img width="3840" height="1080" alt="pic2" src="https://github.com/user-attachments/assets/217625fa-59ef-4bb2-af50-e9ce1c32faa1" />
+<img width="3840" height="1080" alt="pic1" src="https://github.com/user-attachments/assets/456f7cad-1c92-4e29-b521-ca889f09c710" />
 
 
 
