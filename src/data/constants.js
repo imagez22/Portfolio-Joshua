@@ -109,7 +109,6 @@ export const skills = [
     ],
   },
 ];
-
 export const experiences = [
   {
     id: 0,
@@ -304,11 +303,10 @@ export const projects = [
     webapp: "https://codepen.io/imagez01/full/RwZVXVG/",
   }
 ];
-
 export const TimeLineData = [
-  { year: 2020, text: "Started my journey" },
-  { year: 2021, text: "Worked as a freelance developer" },
-  { year: 2022, text: "Founded JavaScript Mastery" },
-  { year: 2023, text: "Shared my projects with the world" },
-  { year: 2024, text: "Started learning all over again!!" },
+  { year: 2017, text: "Started my journey" },
+  { year: 2018, text: "Worked as a freelance developer" },
+  { year: 2019, text: "Founded JavaScript Mastery" },
+  { year: 2020, text: "Shared my projects with the world" },
+  { year: 2021, text: "Started my own platform" },
 ];
