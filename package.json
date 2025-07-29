@@ -1,7 +1,7 @@
 {
-  "name": "rishav-chanda-portfolio",
-  "version": "0.1.0",
-  "homepage": "https://rishavchanda.github.io",
+  "name": "joshua-akli-portfolio",
+  "version": "0.1.1",
+  "homepage": "https://joshua-akli.github.io",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

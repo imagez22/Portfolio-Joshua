@@ -178,30 +178,30 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-    school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-    date: "Oct 2021 - Sep 2025",
-    grade: "8.71 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    img: "./images/ucc.png",
+    school: "University of Cape Coast, Ghana",
+    date: "Oct 2020 - May 2022",
+    grade: "3.3/4.0 CGPA",
+    desc: "I graduated  a Bachelor's degree in  Education - IT and computer Science.",
+    degree: "Bachelor of Education - I.T and Computer Science",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
+    img: "./images/akatsico.png",
+    school: "Akatsi College of Education, Akatsi - Ghana",
     date: "Apr 2019 - Apr 2025",
-    grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
+    grade: "70.2%",
+    desc: "I completed my professional diploma in education at Akatsi College of Education, where I studied Science",
+    degree: "Diploma in Basic Education, Science and Mathematics",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    degree: "ICSC(X), Science with Computer",
+    img: "./images/spaco.png",
+    school: "St. Paul's senior secondary school, Denu",
+    date: "Sep 2014 - May 2017",
+    grade: "74.3%",
+    desc: "I completed my high school education at St. Paul's senior secondary school, Denu, where I studied Science.",
+    degree: "WaEC(SSSCE), Science",
   },
 ];
 
@@ -227,8 +227,8 @@ export const projects = [
     image: "./images/technical.png", // offline replacement
     tags: ["HTML", "CSS", "JavaScript"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Technical-Documentation-Page",
-    webapp: "https://rishavchanda.github.io/Technical-Documentation-Page/",
+    github: "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
+    webapp: "https://codepen.io/imagez01/full/mdMVpOy/",
   },
   {
     id: 10,
@@ -239,8 +239,8 @@ export const projects = [
     image: "./images/drum-machine.png", // offline replacement
     tags: ["React JS", "JavaScript", "CSS"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Drum-Machine",
-    webapp: "https://rishavchanda.github.io/Drum-Machine/",
+    github: "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
+    webapp: "https://codepen.io/imagez01/full/wvqdbNV/",
   },
   {
     id: 4,
@@ -251,8 +251,8 @@ export const projects = [
     image: "./images/pomodoro-clock.png", // offline replacement
     tags: ["React Js", "scss", "JavaScript", "HTML"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    webapp: "https://whatsapp-clone-rishav.web.app",
+    github: "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
+    webapp: "https://codepen.io/imagez01/full/gOxWVexps://whatsapp-clone-rishav.web.app",
   },
 
    {
@@ -264,8 +264,8 @@ export const projects = [
     image: "./images/todo-web-app.png", // offline replacement
     tags: ["JavaScript", "HTML", "CSS"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Todo-Web-App",
-    webapp: "https://rishav-react-todo.netlify.app/",
+    github: "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
+    webapp: "https://codepen.io/imagez01/full/YzeygEp/",
   },
   {
     id: 5,
@@ -276,7 +276,6 @@ export const projects = [
     image: "./images/blog.png", // offline replacement
     tags: ["Wordpress", "PHP", "JavaScript", "HTML", "CSS"],
     category: "website",
-
     webapp: "https://titusworld.blog/",
   },
  {
@@ -287,9 +286,9 @@ export const projects = [
       " A portfolio website built with Vanilla JavaScript. It showcases my projects and skills.",
     image: "./images/jsportfolio.png", // offline replacement
     tags: ["JavaScript", "HTML", "CSS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Todo-Web-App",
-    webapp: "https://rishav-react-todo.netlify.app/",
+    category: "website",
+    github: "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
+    webapp: "https://codepen.io/imagez01/full/MWvoejp/",
   },
 
   {
@@ -301,8 +300,8 @@ export const projects = [
     image: "./images/web-calculator.png", // offline replacement
     tags: ["JavaScript", "React js", "HTML", "CSS"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Quiz-Earn",
-    webapp: "https://github.com/rishavchanda/Quiz-Earn",
+    github: "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
+    webapp: "https://codepen.io/imagez01/full/RwZVXVG/",
   }
 ];
 
