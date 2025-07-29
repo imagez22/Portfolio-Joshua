@@ -1,7 +1,7 @@
 {
   "name": "joshua-akli-portfolio",
   "version": "0.1.1",
-  "homepage": "https://joshua-akli.github.io",
+  "homepage": "https://imagez22.github.io/Portfolio-Joshua",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -14,7 +14,6 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "emailjs": "^4.0.3",
-    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
@@ -33,8 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
