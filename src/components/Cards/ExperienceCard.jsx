@@ -13,6 +13,25 @@ const Document = styled.img`
     }
 `
 
+const LinkButton = styled.a`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    background-color: #306EE8;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: fit-content;
+    transition: opacity 0.2s ease;
+    &:hover {
+        opacity: 0.9;
+    }
+`
+
 const Description = styled.div`
     width: 100%;
     font-size: 15px;
@@ -174,6 +193,11 @@ const ExperienceCard = ({ experience }) => {
                     </>
                 }
             </Description>
+            {experience.link &&
+                <LinkButton href={experience.link} target="_blank" rel="noreferrer">
+                    {experience.linkText || 'View Live App'}
+                </LinkButton>
+            }
             {experience.doc &&
                 <a href={experience.doc} target="new">
                     <Document src={experience.doc} />

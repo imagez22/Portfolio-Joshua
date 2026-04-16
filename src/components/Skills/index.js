@@ -64,6 +64,13 @@ const Skill = styled.div`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+  &:hover {
+    transform: translateY(-8px);
+    border-color: rgba(133, 76, 230, 0.75);
+    box-shadow: 0 24px 48px rgba(133, 76, 230, 0.18);
+    background: ${({ theme }) => theme.bgLight};
+  }
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -103,6 +110,14 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: all 0.25s ease;
+  cursor: default;
+  &:hover {
+    color: ${({ theme }) => theme.white};
+    border-color: ${({ theme }) => theme.primary};
+    background: rgba(133, 76, 230, 0.14);
+    transform: translateY(-2px);
+  }
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;

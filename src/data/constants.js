@@ -78,6 +78,10 @@ export const skills = [
         name: "Firebase",
         image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
       },
+      {
+        name: "Python",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      },
     ],
   },
 
@@ -112,9 +116,43 @@ export const skills = [
   },
 ];
 export const experiences = [
-  {
-    id: 0,
   
+  {id: 0,
+    role: "Full-Stack Web Developer",
+    company: "Judah GH Shop",
+    date: "2024 - Present",
+    desc: "Built full-stack ecommerce experiences with responsive UI, backend services, payment integration, and CMS workflows.",
+    skills: ["ReactJS", "NodeJs", "Express Js", "MongoDB", "Firebase", "Next Js", "HTML", "CSS", "JavaScript", "WordPress"],
+    link: "https://judah-shop--blkjd7hs0f.expo.app",
+    linkText: "View Live App",
+  },
+
+  {
+    id: 1,
+    role: "Web Developer",
+    company: "Freelance",
+    date: "June 2023 - Present",
+    desc: "Working on websites and apps using ReactJS, Redux, Material UI, Vite, NodeJs and WordPress.",
+    skills: [
+      "ReactJS",
+      "Redux",
+      "NodeJs",
+      "Material UI",
+      "Python",
+      "CSS",
+      "JavaScript",
+    ],
+  },
+  
+  {
+    id: 2,
+    role: "FreeCodeCamp community contributor and student in FCC curriculum and other project-oriented courses",
+    company: "FreeCodeCamp - Meta - Stanford University",
+    date: "March 2022 - Present",
+    desc: "Learning from different detailed programmes on front-end developement and industry expert practices",
+  },
+  {
+    id: 3,
     role: "Front-End Web Developer",
     company: "Carifika Canada",
     date: "Aug 2022 - July 2025",
@@ -132,29 +170,10 @@ export const experiences = [
       "Next Js",
       "Odoo"
     ],
-  
   },
   {
-    id: 0,
-
-    role: "Web developer",
-    company: "Freelance",
-    date: "June 2023 - Present",
-    desc: "Working on the frontend of  websites/apps using ReactJS, Redux, Material UI, Vite and Wordpress.",
- 
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-  },
-  {
-    id: 1,
-    role: "web developer",
+    id: 4,
+    role: "Web Developer",
     company: "Exetours.com",
     date: "June 2024 - July 2024",
     desc: "Built a tourist website that allows users to view tour days ahead and book their favorite vacation spots in Ghana.",
@@ -166,29 +185,6 @@ export const experiences = [
       "JavaScript",
     ],
   },
-  {
-    id: 2,
-  role: "FreeCodeCamp community contributor and student in FCC curriculum and other Project oriented courses",
-    company: "FreeCodeCamp - Meta - Standford University",
-    date: "March 2022 - Present",
-    desc: "Learning from different detailed programmes on front-end developement and industry expert practices",
-  },
-  {
-    id: 3,
-    role: "Ecommerce Website Developer",
-    company: "Judah GH Shop",
-    date: "2024 - Present",
-    desc: "Develop ecommerce websites using WordPress or Shopify, featuring product listings, shopping cart, payment integration, and responsive design. Accessible at www.judahgh.shop",
-    skills: ["WordPress", "Shopify", "HTML", "CSS", "JavaScript", "PHP", "Python"],
-  },
-  {
-    id: 4,
-    role: "Ecommerce Backend Developer",
-    company: "Judah Store / FreeLance",
-    date: "Oct 2025 - Present",
-    desc: "Built the backend for an Amazon-style ecommerce clone over the past 6 months. Implemented server-side product catalogs, user auth, order management, payment integration, and backend services using modern infrastructure.",
-    skills: ["Node Js", "Express Js", "MongoDB", "MySQL", "Firebase", "JWT", "REST API", "Stripe", "AWS"],
-  }
 ];
 
 export const education = [
@@ -198,7 +194,7 @@ export const education = [
     school: "University of Cape Coast, Ghana",
     date: "Oct 2020 - May 2022",
     grade: "3.3/4.0 CGPA",
-    desc: "I graduated  a Bachelor's degree in  Education - IT and computer Science.",
+    desc: "I graduated  with Bachelor's degree in  Education - IT and computer Science.",
     degree: "Bachelor of Education - I.T and Computer Science",
   },
   {
@@ -221,6 +217,59 @@ export const education = [
   },
 ];
 
+export const certifications = [
+  {
+    id: 0,
+    name: "JavaScript Algorithms and Data Structures",
+    issuer: "freeCodeCamp",
+  },
+  {
+    id: 1,
+    name: "Front End Libraries (React, Bootstrap, jQuery)",
+    issuer: "freeCodeCamp",
+  },
+  {
+    id: 2,
+    name: "Responsive Web Design (HTML5, CSS3)",
+    issuer: "freeCodeCamp",
+  },
+  {
+    id: 3,
+    name: "Algorithms Specialization",
+    issuer: "Stanford University (Coursera)",
+  },
+  {
+    id: 4,
+    name: "Google IT Support Professional Certificate",
+    issuer: "Google (Coursera)",
+  },
+  {
+    id: 5,
+    name: "Foundations of User Experience (UX) Design",
+    issuer: "Google (Coursera)",
+  },
+  {
+    id: 6,
+    name: "Database Structures and Management with MySQL",
+    issuer: "Meta (Coursera)",
+  },
+  {
+    id: 7,
+    name: "Algorithmic Toolbox (Greedy, Divide & Conquer, Dynamic Programming)",
+    issuer: "UC San Diego & HSE University (Coursera)",
+  },
+  {
+    id: 8,
+    name: "JavaScript Essentials",
+    issuer: "Cisco Networking Academy",
+  },
+  {
+    id: 9,
+    name: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+  },
+];
+
 export const projects = [
   {
     id: 1,
@@ -232,25 +281,12 @@ export const projects = [
     tags: ["React Js", "Node Js", "Firebase", "Material UI"],
     category: "full stack",
     github: "https://github.com/imagez22/Exe-Tours-main",
-    webapp: "https://exetours.com",
+    webapp: "https://exetours.world",
   },
+
 
   {
     id: 2,
-    title: "Full-Stack Todo & Productivity App",
-    date: "2023",
-    description:
-      "A productivity-focused web app with task management, calendar view, and authentication. Integrated Firebase for real-time database and user login. Designed with scalable state management and reusable components.",
-    image: "./images/todo-web-app.png",
-    tags: ["React Js", "Redux", "Firebase", "Material UI"],
-    category: "full stack",
-    github:
-      "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
-    webapp: "https://your-firebase-app.web.app", // 🔁 replace with your Firebase link
-  },
-
-  {
-    id: 3,
     title: "React Drum Machine",
     date: "2023",
     description:
@@ -264,7 +300,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Pomodoro Productivity Timer",
     date: "2022",
     description:
@@ -274,23 +310,24 @@ export const projects = [
     category: "frontend",
     github:
       "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
-    webapp: "https://codepen.io/imagez01/full/gOxWVex/",
+    webapp: "https://focustimer-akli.netlify.app/",
+  },
+
+  {
+    id: 4,
+    title: "Tetris Game",
+    date: "2025",
+    description:
+      "A live Netlify Tetris game with touch and keyboard controls. Built for responsive gameplay and seamless interaction across desktop and mobile devices.",
+    image: "./images/tetris.png",
+    tags: ["React Js", "Node Js", "Netlify", "JavaScript", "HTML", "CSS"],
+    category: "frontend",
+    github: "https://github.com/imagez22/Tetris_Game-master",
+    webapp: "https://retrotetris-akli.netlify.app/",
   },
 
   {
     id: 5,
-    title: "Blog & Content Platform",
-    date: "2024",
-    description:
-      "A content-driven blog and landing platform built with WordPress, customized with JavaScript and PHP. Focused on SEO structure, performance, and user engagement.",
-    image: "./images/blog.png",
-    tags: ["WordPress", "PHP", "JavaScript"],
-    category: "full stack",
-    webapp: "https://titusworld.blog/",
-  },
-
-  {
-    id: 6,
     title: "Web Calculator (React)",
     date: "2023",
     description:
@@ -300,17 +337,17 @@ export const projects = [
     category: "frontend",
     github:
       "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
-    webapp: "https://codepen.io/imagez01/full/RwZVXVG/",
+    webapp: "https://webcalculator-akli.netlify.app/",
   },
 
   {
-    id: 7,
-    title: "Amazon Clone - Judah Store",
+    id: 6,
+    title: "Online Store - MERN STACK",
     date: "2025",
     description:
-      "An ecommerce app that works like Amazon, built with the latest technology.",
+      "TileOnline Store is an Amazon-style ecommerce app built with React Native, Expo, and Firebase. Features mobile commerce flows, product browsing, and user authentication.",
     image: mobileAppImg,
-    tags: ["React Native", "Expo", "Firebase"],
+    tags: ["React Native", "Expo", "Firebase", "Node Js", "MongoDB"],
     category: "mobile",
     github: "https://github.com/imagez22/amazon-clone",
     webapp: "https://judahstore--xo202whpna.expo.app/",

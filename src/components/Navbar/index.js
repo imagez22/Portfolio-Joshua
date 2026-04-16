@@ -1,7 +1,7 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, LinkedInButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
 import { DiCssdeck } from 'react-icons/di';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
@@ -28,10 +28,11 @@ const Navbar = () => {
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#education'>Education</NavLink>
+          <NavLink href='#certifications'>Certifications</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
-          <GitHubButton href={Bio.linkedin} target="_blank" style={{ marginLeft: '12px' }}>LinkedIn Profile</GitHubButton>
+          <GitHubButton href={Bio.github} target="_blank"><FaGithub style={{ marginRight: '8px' }} /> Github Profile</GitHubButton>
+          <LinkedInButton href={Bio.linkedin} target="_blank" style={{ marginLeft: '12px' }}><FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn Profile</LinkedInButton>
         </ButtonContainer>
         {
           isOpen &&
@@ -51,8 +52,11 @@ const Navbar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content', marginTop: '8px'}} href={Bio.linkedin} target="_blank">LinkedIn Profile</GitHubButton>
+            <MobileLink href='#certifications' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Certifications</MobileLink>
+            <GitHubButton style={{padding: '10px 16px', width: 'max-content'}} href={Bio.github} target="_blank"><FaGithub style={{ marginRight: '8px' }} /> Github Profile</GitHubButton>
+            <LinkedInButton style={{padding: '10px 16px', width: 'max-content', marginTop: '8px'}} href={Bio.linkedin} target="_blank"><FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn Profile</LinkedInButton>
           </MobileMenu>
         }
       </NavbarContainer>

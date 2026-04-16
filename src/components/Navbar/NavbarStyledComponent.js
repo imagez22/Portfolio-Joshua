@@ -4,6 +4,9 @@ import _default from '../../themes/default';
 
 export const Nav = styled.div`
     background-color: ${({theme}) => theme.card_light};
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     height: 80px;
     display: flex;
     align-items: center;
@@ -12,8 +15,9 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
+    transition: background 0.3s ease, border 0.3s ease;
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transition: 0.8s all ease;
     }
 `;
 export const NavbarContainer = styled.div`
@@ -61,40 +65,58 @@ export const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
     text-decoration: none;
+    padding: 8px 0;
+    position: relative;
     :hover {
       color: ${({ theme }) => theme.primary};
+      transform: translateY(-1px);
     }
 
     &.active {
-      border-bottom: 2px solid ${({ theme }) => theme.primary};
+      color: ${({ theme }) => theme.primary};
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        border-radius: 999px;
+        background: ${({ theme }) => theme.primary};
+      }
     }
 `;
-
 
 export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  justify-content: center;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  height: 70%;
-  border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  justify-content: center;
+  gap: 8px;
+  height: 46px;
+  border-radius: 18px;
+  color: #fff;
   cursor: pointer;
-  padding: 0 20px;
-  font-weight: 500;
+  padding: 0 22px;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 16px;
-  transition: all 0.6s ease-in-out;
-    :hover {
-      background: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};     
-    }
-    @media screen and (max-width: 768px) { 
+  font-size: 15px;
+  background: linear-gradient(135deg, #7A3CFF, #E54FFF);
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0px 16px 34px rgba(122, 60, 255, 0.24);
+
+  :hover {
+    background: linear-gradient(135deg, #8E4BFF, #F160FF);
+    transform: translateY(-2px);
+    box-shadow: 0px 20px 40px rgba(122, 60, 255, 0.28);
+  }
+  @media screen and (max-width: 768px) {
     font-size: 14px;
-    }
+  }
 `;
+
+export const LinkedInButton = styled(GitHubButton)``;
 
 export const ButtonContainer = styled.div`
   width: 80%;  
