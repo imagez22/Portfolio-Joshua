@@ -1,7 +1,7 @@
 {
   "name": "joshua-akli-portfolio",
   "version": "0.1.0",
-  "homepage": "https://aklijoshua.netlify.app",
+  "homepage": "https://aklijoshua.pro",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
