@@ -1,4 +1,5 @@
 export const darkTheme = {
+    isDark: true,
     bg:"#1C1C27",
     bgLight: "#1C1E27",
     primary:"#854CE6",
@@ -12,11 +13,15 @@ export const darkTheme = {
 }
 
 export const lightTheme = {
+    isDark: false,
     bg:"#FFFFFF",
     bgLight: "#f0f0f0",
     primary:"#be1adb",
     text_primary:"#111111",
     text_secondary:"#48494a",
     card:"#FFFFFF",
+    card_light: '#f7f7f9',
     button:"#5c5b5b",
+    white:"#FFFFFF",
+    black:"#000000",
 }

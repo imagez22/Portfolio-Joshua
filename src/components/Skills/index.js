@@ -113,7 +113,7 @@ const SkillItem = styled.div`
   transition: all 0.25s ease;
   cursor: default;
   &:hover {
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.text_primary};
     border-color: ${({ theme }) => theme.primary};
     background: rgba(133, 76, 230, 0.14);
     transform: translateY(-2px);
@@ -131,6 +131,10 @@ const SkillItem = styled.div`
 const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+  /* Black logos (Next.js, Express, GitHub, Expo) turn white on the dark theme */
+  filter: ${({ $mono, theme }) => ($mono && theme.isDark ? 'invert(1)' : 'none')};
 `
 
 
@@ -143,12 +147,12 @@ const Skills = () => {
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
-            <Skill>
+            <Skill key={skill.title}>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
                 {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
+                  <SkillItem key={item.name}>
+                    <SkillImage src={item.image} alt="" $mono={item.mono} loading="lazy" />
                     {item.name}
                   </SkillItem>
                 ))}

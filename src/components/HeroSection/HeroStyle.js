@@ -134,20 +134,68 @@ export const TextLoop = styled.div`
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
+  flex-wrap: wrap;
+  align-items: baseline;
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
+    justify-content: center;
   }
   @media (max-width: 640px) {
     font-size: 22px;
-    line-height: 48px;
+    line-height: 36px;
+    gap: 8px;
     margin-bottom: 16px;
   }
 `;
 
 export const Span = styled.span`
+  display: inline-grid;
+  text-align: left;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
+  & > * {
+    grid-area: 1 / 1;
+  }
+`;
+
+// Invisible copy of the longest role so the typewriter doesn't shift the text after it
+export const RoleSizer = styled.span`
+  visibility: hidden;
+  white-space: nowrap;
+`;
+
+export const Platforms = styled.span`
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  gap: 12px;
+  margin-top: -8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: ${({ theme }) => theme.text_secondary};
+  white-space: nowrap;
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
+  @media (max-width: 640px) {
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 26px;
+    gap: 8px;
+  }
+`;
+
+export const PlatformDivider = styled.span`
+  width: 3px;
+  height: 1em;
+  border-radius: 2px;
+  background: ${({ theme }) => theme.primary};
+  color: transparent;
+  overflow: hidden;
 `;
 
 export const SubTitle = styled.div`
@@ -166,38 +214,62 @@ export const SubTitle = styled.div`
   }
 `;
 
-export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+export const HeroButtons = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
+`;
 
+const heroButtonBase = `
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1 1 200px;
+  max-width: 260px;
+  padding: 16px 24px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+  &:hover {
+    transform: translateY(-3px);
+  }
+  &:focus-visible {
+    outline: 3px solid rgba(133, 76, 230, 0.5);
+    outline-offset: 3px;
+  }
+  @media (max-width: 640px) {
+    padding: 12px 20px;
+    font-size: 16px;
+    max-width: none;
+  }
+`;
+
+export const ResumeButton = styled.a`
+  ${heroButtonBase}
+  color: ${({ theme }) => theme.white};
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  box-shadow: 0 12px 32px rgba(133, 76, 230, 0.35);
+  &:hover {
+    box-shadow: 0 18px 40px rgba(133, 76, 230, 0.5);
+  }
+`;
+
+export const EmailButton = styled.a`
+  ${heroButtonBase}
+  color: ${({ theme }) => theme.primary};
+  background: transparent;
+  border: 2px solid ${({ theme }) => theme.primary};
+  &:hover {
+    color: ${({ theme }) => theme.white};
+    background: ${({ theme }) => theme.primary};
+    box-shadow: 0 18px 40px rgba(133, 76, 230, 0.35);
+  }
 `;

@@ -108,14 +108,7 @@ const CertificationTitle = styled.div`
 const CertificationIssuer = styled.div`
   font-size: 0.95rem;
   color: ${({ theme }) => theme.text_secondary};
-  min-width: 160px;
-  text-align: right;
-  white-space: nowrap;
-
-  @media (max-width: 720px) {
-    text-align: left;
-    width: 100%;
-  }
+  text-align: left;
 `
 
 const ButtonWrapper = styled.div`

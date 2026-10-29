@@ -18,17 +18,18 @@ const LinkButton = styled.a`
     align-items: center;
     justify-content: center;
     padding: 10px 16px;
-    background-color: #306EE8;
+    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
     margin-top: 10px;
     width: fit-content;
-    transition: opacity 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     &:hover {
-        opacity: 0.9;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(133, 76, 230, 0.35);
     }
 `
 
@@ -186,7 +187,7 @@ const ExperienceCard = ({ experience }) => {
                             <b>Skills:</b>
                             <ItemWrapper>
                                 {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
+                                    <Skill key={skill}>• {skill}</Skill>
                                 ))}
                             </ItemWrapper>
                         </Skills>

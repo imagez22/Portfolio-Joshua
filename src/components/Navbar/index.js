@@ -13,7 +13,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
+          <a style={{ display: "flex", alignItems: "center", color: theme.text_primary, cursor: 'pointer' }}>
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
@@ -29,13 +29,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#education'>Education</NavLink>
           <NavLink href='#certifications'>Certifications</NavLink>
+          <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
           <ThemeToggle onClick={() => setDarkMode(!darkMode)} aria-label="Toggle theme">
             {darkMode ? <LightModeOutlined fontSize="inherit" /> : <DarkModeOutlined fontSize="inherit" />}
           </ThemeToggle>
-          <GitHubButton href={Bio.github} target="_blank"><FaGithub style={{ marginRight: '8px' }} /> Github Profile</GitHubButton>
-          <LinkedInButton href={Bio.linkedin} target="_blank" style={{ marginLeft: '12px' }}><FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn Profile</LinkedInButton>
+          <GitHubButton href={Bio.github} target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</GitHubButton>
+          <LinkedInButton href={Bio.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</LinkedInButton>
         </ButtonContainer>
         {
           isOpen &&
@@ -58,8 +59,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <MobileLink href='#certifications' onClick={() => {
               setIsOpen(!isOpen)
             }}>Certifications</MobileLink>
-            <GitHubButton style={{padding: '10px 16px', width: 'max-content'}} href={Bio.github} target="_blank"><FaGithub style={{ marginRight: '8px' }} /> Github Profile</GitHubButton>
-            <LinkedInButton style={{padding: '10px 16px', width: 'max-content', marginTop: '8px'}} href={Bio.linkedin} target="_blank"><FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn Profile</LinkedInButton>
+            <MobileLink href='#contact' onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Contact</MobileLink>
+            <GitHubButton style={{padding: '10px 16px', width: 'max-content'}} href={Bio.github} target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub Profile</GitHubButton>
+            <LinkedInButton style={{padding: '10px 16px', width: 'max-content', marginTop: '8px'}} href={Bio.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn Profile</LinkedInButton>
             <ThemeToggle style={{marginTop: '8px'}} onClick={() => setDarkMode(!darkMode)} aria-label="Toggle theme">
               {darkMode ? <LightModeOutlined fontSize="inherit" /> : <DarkModeOutlined fontSize="inherit" />}
             </ThemeToggle>

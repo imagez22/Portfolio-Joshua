@@ -165,7 +165,6 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted');
     if (!validateForm()) {
       return;
     }
@@ -174,29 +173,32 @@ const Contact = () => {
     const formData = new FormData(form.current);
     
     try {
-      // Method 1: Try FormSubmit (most reliable, no setup needed)
-      console.log('Attempting to send via FormSubmit...');
+      // Method 1: FormSubmit. It answers 200 even when it rejects a message,
+      // so check the `success` field in the JSON body, not just the HTTP status.
+      formData.append('_subject', `Portfolio contact: ${formData.get('subject')}`);
+      formData.append('_replyto', formData.get('from_email'));
+      formData.append('_template', 'table');
+      formData.append('_captcha', 'false');
       const formSubmitResponse = await fetch('https://formsubmit.co/ajax/aklijoshuaericy@gmail.com', {
         method: 'POST',
+        headers: { Accept: 'application/json' },
         body: formData,
       });
+      const result = await formSubmitResponse.json().catch(() => ({}));
 
-      if (formSubmitResponse.ok) {
-        console.log('✓ Email sent successfully via FormSubmit');
+      if (formSubmitResponse.ok && String(result.success) === 'true') {
         setLoading(false);
         setSnackbar({ open: true, severity: 'success', message: '✓ Message sent successfully! I will get back to you soon.' });
         form.current.reset();
         return;
-      } else {
-        throw new Error('FormSubmit failed');
       }
+      throw new Error(result.message || 'FormSubmit failed');
     } catch (formSubmitError) {
-      console.log('FormSubmit failed, trying EmailJS...', formSubmitError);
-      
+      console.warn('FormSubmit failed, trying EmailJS...', formSubmitError);
+
       // Method 2: Fallback to EmailJS
       try {
-        const result = await emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current);
-        console.log('✓ Email sent successfully via EmailJS', result);
+        await emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current);
         setLoading(false);
         setSnackbar({ open: true, severity: 'success', message: '✓ Message sent successfully! I will get back to you soon.' });
         form.current.reset();
@@ -204,7 +206,7 @@ const Contact = () => {
       } catch (emailjsError) {
         console.error('Both methods failed:', emailjsError);
         setLoading(false);
-        setSnackbar({ open: true, severity: 'error', message: '✗ Unable to send message. Please try again later or contact via email.' });
+        setSnackbar({ open: true, severity: 'error', message: '✗ Unable to send message. Please email me directly at aklijoshuaericy@gmail.com.' });
       }
     }
   }
@@ -212,7 +214,7 @@ const Contact = () => {
 
 
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>

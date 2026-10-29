@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, } from './ProjectsStyle'
+import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
 import ProjectCard from '../Cards/ProjectCards'
 import { projects } from '../../data/constants'
 
@@ -14,26 +14,19 @@ const Projects = ({openModal,setOpenModal}) => {
         <Desc>
           I have worked on a wide range of projects. From web apps to websites. Here are some of my projects.
         </Desc>
-        <ToggleButtonGroup >
-          {toggle === 'all' ?
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>Sample</ToggleButton>
-            :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-          }
-         
-          
-         
-          
+        <ToggleButtonGroup>
+          {[['all', 'All'], ['full stack', 'Full Stack'], ['frontend', 'Frontend']].map(([value, label], i) => (
+            <React.Fragment key={value}>
+              {i > 0 && <Divider />}
+              <ToggleButton active={toggle === value || undefined} value={value} onClick={() => setToggle(value)}>{label}</ToggleButton>
+            </React.Fragment>
+          ))}
         </ToggleButtonGroup>
         <CardContainer>
-          {toggle === 'all' && projects
-            .map((project) => (
-              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
-            ))}
           {projects
-            .filter((item) => item.category === toggle)
+            .filter((item) => toggle === 'all' || item.category === toggle)
             .map((project) => (
-              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+              <ProjectCard key={project.id} project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
         </CardContainer>
       </Wrapper>

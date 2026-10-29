@@ -1,10 +1,12 @@
 export const Bio = {
   name: "Akli Joshua Eric Yao",
   roles: [
-    "Full Stack Web Developer",
+    "A Full Stack Developer",
   ],
+  platforms: "Mobile & Web",
   description:
     "Full-stack web developer with hands-on experience building scalable, user-focused applications across web platforms. Skilled in designing responsive interfaces, developing backend services, and integrating modern tools such as Firebase and cloud-based solutions. Passionate about writing clean, maintainable code and continuously improving performance, usability, and system design. I thrive in building products from concept to deployment and delivering reliable digital solutions.",
+  email: "aklijoshuaericy@gmail.com",
   github: "https://github.com/imagez22",
   resume:
     "https://drive.google.com/file/d/1x1wtcC8Gz0k0wtj_vjlZdd3kIqrnC2MM/view?usp=sharing",
@@ -16,51 +18,53 @@ export const skills = [
     skills: [
       {
         name: "React Js",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+        image: "./images/skills/react-original.svg",
       },
       {
         name: "Redux",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+        image: "./images/skills/redux-original.svg",
       },
       {
         name: "Next Js",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+        image: "./images/skills/nextjs-original.svg",
+        mono: true,
       },
       {
         name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+        image: "./images/skills/html5-original.svg",
       },
       {
         name: "CSS",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+        image: "./images/skills/css3-original.svg",
       },
       {
         name: "JavaScript",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        image: "./images/skills/javascript-original.svg",
       },
       {
         name: "Bootstrap",
-        image: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+        image: "./images/skills/bootstrap-original.svg",
       },
       {
         name: "Material UI",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
+        image: "./images/skills/materialui-original.svg",
       },
       {
         name: "Flutter",
-        image: "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
+        image: "./images/skills/flutter-original.svg",
       },
       {
         name: "TypeScript",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+        image: "./images/skills/typescript-original.svg",
       },
       {
         name: "React Native",
-        image: "https://cdn.simpleicons.org/react/61DAFB",
+        image: "./images/skills/react-original.svg",
       },
       {
         name: "Expo",
-        image: "https://cdn.simpleicons.org/expo/FFFFFF",
+        image: "./images/skills/expo.svg",
+        mono: true,
       },
     ],
   },
@@ -70,35 +74,36 @@ export const skills = [
     skills: [
       {
         name: "Node Js",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+        image: "./images/skills/nodejs-original.svg",
       },
       {
         name: "Express Js",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+        image: "./images/skills/express-original.svg",
+        mono: true,
       },
       {
         name: "MongoDB",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
+        image: "./images/skills/mongodb-original.svg",
       },
       {
         name: "MySQL",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+        image: "./images/skills/mysql.svg",
       },
       {
         name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+        image: "./images/skills/firebase-original.svg",
       },
       {
         name: "Python",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        image: "./images/skills/python-original.svg",
       },
       {
         name: "Paystack",
-        image: "https://cdn.simpleicons.org/paystack/00C3F7",
+        image: "./images/skills/paystack.svg",
       },
       {
         name: "Cloudinary",
-        image: "https://cdn.simpleicons.org/cloudinary/3448C5",
+        image: "./images/skills/cloudinary.svg",
       },
     ],
   },
@@ -108,27 +113,28 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
+        image: "./images/skills/git-original.svg",
       },
       {
         name: "GitHub",
-        image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+        image: "./images/skills/github-original.svg",
+        mono: true,
       },
       {
         name: "Netlify",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/netlify/netlify-original.svg",
+        image: "./images/skills/netlify-original.svg",
       },
       {
         name: "VS Code",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+        image: "./images/skills/vscode-original.svg",
       },
       {
         name: "Adobe XD",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-original.svg",
+        image: "./images/skills/xd-original.svg",
       },
       {
         name: "Figma",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg",
+        image: "./images/skills/figma-original.svg",
       },
     ],
   },
