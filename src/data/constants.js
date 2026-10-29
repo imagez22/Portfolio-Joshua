@@ -140,83 +140,46 @@ export const skills = [
   },
 ];
 export const experiences = [
-
   {
     id: 0,
-    role: "Full-Stack Developer",
-    company: "shop9",
-    date: "2025 - Present",
-    desc: "Built shop9, a shopping e-commerce platform spanning a Next.js web dashboard and an Expo-powered React Native mobile app (iOS & Android). Integrated Firebase Auth, Firestore, and Cloud Functions, Paystack payments, Cloudinary image hosting, and WhatsApp-based order support.",
-    skills: ["TypeScript", "React Native", "Next Js", "ReactJS", "Firebase", "Paystack", "Expo", "Cloudinary"],
-    link: "https://shop9.online",
-    linkText: "View Live App",
-  },
-
-  {id: 1,
-    role: "Full-Stack Web Developer",
-    company: "Studio Booking App",
-    date: "2024 - Present",
-    desc: "Built a full-stack studio booking app that lets clients browse available sessions, reserve time slots, and manage their bookings.",
-    skills: ["ReactJS", "NodeJs", "Express Js", "MongoDB", "Firebase", "Next Js", "HTML", "CSS", "JavaScript"],
-    link: "https://istudiorecords.space/",
-    linkText: "View Live App",
-  },
-
-  {
-    id: 2,
-    role: "Web Developer",
+    role: "Full-Stack Developer · Mobile & Web",
     company: "Freelance",
     date: "June 2023 - Present",
-    desc: "Working on websites and apps using ReactJS, Redux, Material UI, Vite, NodeJs and WordPress.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "Python",
-      "CSS",
-      "JavaScript",
+    desc: "Designing, building and shipping web and mobile products for clients end to end, from UI and backend to payments and deployment.",
+    highlights: [
+      {
+        name: "shop9",
+        text: "E-commerce platform with a Next.js web dashboard and an Expo React Native app for iOS & Android. Firebase Auth, Firestore & Cloud Functions, Paystack payments, Cloudinary images and WhatsApp order support.",
+        link: "https://shop9.online",
+      },
+      {
+        name: "I Studio Records",
+        text: "Music studio booking app with user accounts, session booking, Paystack payments, reviews, a client dashboard and an admin panel for bookings, studios and instruments.",
+        link: "https://istudiorecords.space/",
+      },
+      {
+        name: "Exetours",
+        text: "Tourism website for browsing tour destinations in Ghana, with a mailer-based inquiry flow.",
+        link: "https://www.exetours.site",
+      },
     ],
-  },
-  
-  {
-    id: 3,
-    role: "FreeCodeCamp community contributor and student in FCC curriculum and other project-oriented courses",
-    company: "FreeCodeCamp - Meta - Stanford University",
-    date: "March 2022 - Present",
-    desc: "Learning from different detailed programmes on front-end developement and industry expert practices",
+    skills: ["TypeScript", "JavaScript", "React Js", "React Native", "Next Js", "Expo", "Node Js", "Redux", "Material UI", "Firebase", "Paystack", "Cloudinary", "Jest", "Netlify"],
   },
   {
-    id: 4,
+    id: 1,
     role: "Front-End Web Developer",
     company: "Carifika Canada",
     date: "Aug 2022 - July 2025",
-    desc: "Working on website development and maintenance. Mostly on front-end technologies while also administering e-learning platforms.",
-    skills: [
-      "HTML",
-      "JavaScript",
-      "AWS",
-      "ES7",
-      "CSS",
-      "SCSS",
-      "React Js",
-      "Wordpress",
-      "Redux",
-      "Next Js",
-      "Odoo"
-    ],
+    desc: "Built and maintained the company websites, focused on front-end development, and administered its e-learning platforms.",
+    skills: ["React Js", "Next Js", "Redux", "JavaScript (ES7)", "HTML", "CSS / SCSS", "WordPress", "Odoo", "AWS"],
   },
   {
-    id: 5,
-    role: "Web Developer",
-    company: "Exetours.com",
-    date: "June 2024 - July 2024",
-    desc: "Built a vanilla JavaScript tourist website that lets users browse tour destinations and vacation spots in Ghana, with a mailer-based inquiry flow.",
-    skills: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-    ],
+    id: 2,
+    role: "Community Contributor & Learner",
+    company: "freeCodeCamp",
+    date: "2019 - 2022",
+    desc: "Worked through the freeCodeCamp curriculum and earned its Responsive Web Design, JavaScript Algorithms & Data Structures and Front End Libraries certifications, while taking part in the community.",
+    skills: ["HTML", "CSS", "JavaScript", "React Js", "Bootstrap", "jQuery"],
   },
 ];
 
@@ -313,9 +276,9 @@ export const projects = [
     title: "I Studio Records - Studio Booking App",
     date: "2025",
     description:
-      "A studio booking web app for I Studio Records in Keta, Ghana. Artists can browse recording studios, instruments, and mixing & mastering services, read reviews, and book studio sessions through user accounts, with light and dark themes.",
+      "Music studio booking app for I Studio Records in Keta, Ghana. Artists create accounts, book studio sessions and pay with Paystack, leave reviews and track bookings in a dashboard, while an admin panel manages bookings, studios and instruments.",
     image: "./images/istudiorecords.png",
-    tags: ["Booking System", "Authentication", "Responsive UI", "Netlify"],
+    tags: ["JavaScript", "HTML", "CSS", "Paystack", "Jest", "Netlify"],
     category: "full stack",
     github: "https://github.com/imagez22/iStudioRecords",
     webapp: "https://istudiorecords.space/",
@@ -331,7 +294,7 @@ export const projects = [
     tags: ["JavaScript", "HTML", "CSS"],
     category: "frontend",
     github: "https://github.com/imagez22/Exe-Tours-main",
-    webapp: "https://exetours.world",
+    webapp: "https://www.exetours.site",
   },
 
   {
