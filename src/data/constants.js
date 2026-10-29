@@ -9,7 +9,7 @@ export const Bio = {
   email: "aklijoshuaericy@gmail.com",
   github: "https://github.com/imagez22",
   resume:
-    "https://drive.google.com/file/d/1x1wtcC8Gz0k0wtj_vjlZdd3kIqrnC2MM/view?usp=sharing",
+    "https://drive.google.com/file/d/1vkUCoGHSwvFsq9hmweTYMscAEk9OKV6h/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/akli-joshua-eric-yao-306b85364/",
 };
 export const skills = [
