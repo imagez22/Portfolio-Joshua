@@ -311,6 +311,7 @@ export const projects = [
     image: "./images/istudiorecords.png",
     tags: ["Booking System", "Authentication", "Responsive UI", "Netlify"],
     category: "full stack",
+    github: "https://github.com/imagez22/iStudioRecords",
     webapp: "https://istudiorecords.space/",
   },
 
