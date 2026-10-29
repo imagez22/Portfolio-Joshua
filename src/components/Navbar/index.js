@@ -1,12 +1,12 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, LinkedInButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, LinkedInButton, ButtonContainer, ThemeToggle, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { Close, CloseRounded } from '@mui/icons-material';
+import { LightModeOutlined, DarkModeOutlined } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme()
   return (
@@ -31,6 +31,9 @@ const Navbar = () => {
           <NavLink href='#certifications'>Certifications</NavLink>
         </NavItems>
         <ButtonContainer>
+          <ThemeToggle onClick={() => setDarkMode(!darkMode)} aria-label="Toggle theme">
+            {darkMode ? <LightModeOutlined fontSize="inherit" /> : <DarkModeOutlined fontSize="inherit" />}
+          </ThemeToggle>
           <GitHubButton href={Bio.github} target="_blank"><FaGithub style={{ marginRight: '8px' }} /> Github Profile</GitHubButton>
           <LinkedInButton href={Bio.linkedin} target="_blank" style={{ marginLeft: '12px' }}><FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn Profile</LinkedInButton>
         </ButtonContainer>
@@ -57,6 +60,9 @@ const Navbar = () => {
             }}>Certifications</MobileLink>
             <GitHubButton style={{padding: '10px 16px', width: 'max-content'}} href={Bio.github} target="_blank"><FaGithub style={{ marginRight: '8px' }} /> Github Profile</GitHubButton>
             <LinkedInButton style={{padding: '10px 16px', width: 'max-content', marginTop: '8px'}} href={Bio.linkedin} target="_blank"><FaLinkedin style={{ marginRight: '8px' }} /> LinkedIn Profile</LinkedInButton>
+            <ThemeToggle style={{marginTop: '8px'}} onClick={() => setDarkMode(!darkMode)} aria-label="Toggle theme">
+              {darkMode ? <LightModeOutlined fontSize="inherit" /> : <DarkModeOutlined fontSize="inherit" />}
+            </ThemeToggle>
           </MobileMenu>
         }
       </NavbarContainer>

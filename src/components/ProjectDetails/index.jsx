@@ -199,14 +199,14 @@ const index = ({ openModal, setOpenModal }) => {
                     />
                     <Image src={project?.image} />
                     <Title>{project?.title}</Title>
-                    <Date>{project.date}</Date>
+                    <Date>{project?.date}</Date>
                     <Tags>
-                        {project?.tags.map((tag) => (
+                        {project?.tags?.map((tag) => (
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
                     <Desc>{project?.description}</Desc>
-                    {project.member && (
+                    {project?.member && (
                         <>
                             <Label>Members</Label>
                             <Members>
@@ -226,7 +226,7 @@ const index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
+                        {project?.github && <Button dull href={project.github} target='new'>View Code</Button>}
                         <Button href={project?.webapp} target='new'>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>

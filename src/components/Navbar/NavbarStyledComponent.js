@@ -119,14 +119,36 @@ export const GitHubButton = styled.a`
 export const LinkedInButton = styled(GitHubButton)``;
 
 export const ButtonContainer = styled.div`
-  width: 80%;  
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
+  gap: 12px;
   padding: 0 6px;
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const ThemeToggle = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid ${({ theme }) => theme.text_secondary};
+  background: transparent;
+  color: ${({ theme }) => theme.text_primary};
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.25s ease-in-out;
+
+  :hover {
+    border-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primary};
+    transform: translateY(-2px);
   }
 `;
 

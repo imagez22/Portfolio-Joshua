@@ -1,5 +1,3 @@
-import mobileAppImg from '../images/mobile-app.png';
-
 export const Bio = {
   name: "Akli Joshua Eric Yao",
   roles: [
@@ -52,6 +50,18 @@ export const skills = [
         name: "Flutter",
         image: "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
       },
+      {
+        name: "TypeScript",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "React Native",
+        image: "https://cdn.simpleicons.org/react/61DAFB",
+      },
+      {
+        name: "Expo",
+        image: "https://cdn.simpleicons.org/expo/FFFFFF",
+      },
     ],
   },
 
@@ -81,6 +91,14 @@ export const skills = [
       {
         name: "Python",
         image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      },
+      {
+        name: "Paystack",
+        image: "https://cdn.simpleicons.org/paystack/00C3F7",
+      },
+      {
+        name: "Cloudinary",
+        image: "https://cdn.simpleicons.org/cloudinary/3448C5",
       },
     ],
   },
@@ -116,19 +134,30 @@ export const skills = [
   },
 ];
 export const experiences = [
-  
-  {id: 0,
+
+  {
+    id: 0,
+    role: "Full-Stack Developer",
+    company: "shop9.online",
+    date: "2025 - Present",
+    desc: "Built shop9.online, a shopping e-commerce platform spanning a Next.js web dashboard and an Expo-powered React Native mobile app (iOS & Android). Integrated Firebase Auth, Firestore, and Cloud Functions, Paystack payments, Cloudinary image hosting, and WhatsApp-based order support.",
+    skills: ["TypeScript", "React Native", "Next Js", "ReactJS", "Firebase", "Paystack", "Expo", "Cloudinary"],
+    link: "https://shop9.online",
+    linkText: "View Live App",
+  },
+
+  {id: 1,
     role: "Full-Stack Web Developer",
-    company: "Judah GH Shop",
+    company: "Studio Booking App",
     date: "2024 - Present",
-    desc: "Built full-stack ecommerce experiences with responsive UI, backend services, payment integration, and CMS workflows.",
-    skills: ["ReactJS", "NodeJs", "Express Js", "MongoDB", "Firebase", "Next Js", "HTML", "CSS", "JavaScript", "WordPress"],
-    link: "https://judah-shop--blkjd7hs0f.expo.app",
+    desc: "Built a full-stack studio booking app that lets clients browse available sessions, reserve time slots, and manage their bookings.",
+    skills: ["ReactJS", "NodeJs", "Express Js", "MongoDB", "Firebase", "Next Js", "HTML", "CSS", "JavaScript"],
+    link: "https://istudiorecords.space/",
     linkText: "View Live App",
   },
 
   {
-    id: 1,
+    id: 2,
     role: "Web Developer",
     company: "Freelance",
     date: "June 2023 - Present",
@@ -145,14 +174,14 @@ export const experiences = [
   },
   
   {
-    id: 2,
+    id: 3,
     role: "FreeCodeCamp community contributor and student in FCC curriculum and other project-oriented courses",
     company: "FreeCodeCamp - Meta - Stanford University",
     date: "March 2022 - Present",
     desc: "Learning from different detailed programmes on front-end developement and industry expert practices",
   },
   {
-    id: 3,
+    id: 4,
     role: "Front-End Web Developer",
     company: "Carifika Canada",
     date: "Aug 2022 - July 2025",
@@ -172,17 +201,15 @@ export const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     role: "Web Developer",
     company: "Exetours.com",
     date: "June 2024 - July 2024",
-    desc: "Built a tourist website that allows users to view tour days ahead and book their favorite vacation spots in Ghana.",
+    desc: "Built a vanilla JavaScript tourist website that lets users browse tour destinations and vacation spots in Ghana, with a mailer-based inquiry flow.",
     skills: [
-      "ReactJS",
-      "Material UI",
+      "JavaScript",
       "HTML",
       "CSS",
-      "JavaScript",
     ],
   },
 ];
@@ -199,15 +226,6 @@ export const education = [
   },
   {
     id: 1,
-    img: "./images/akatsico.png",
-    school: "Akatsi College of Education, Akatsi - Ghana",
-    date: "Apr 2019 - Apr 2025",
-    grade: "70.2%",
-    desc: "I completed my professional diploma in education at Akatsi College of Education, where I studied Science",
-    degree: "Diploma in Basic Education, Science and Mathematics",
-  },
-  {
-    id: 2,
     img: "./images/spaco.png",
     school: "St. Paul's senior secondary school, Denu",
     date: "Sep 2014 - May 2017",
@@ -272,45 +290,41 @@ export const certifications = [
 
 export const projects = [
   {
+    id: 7,
+    title: "shop9.online - E-Commerce Platform",
+    date: "2025",
+    description:
+      "Full-stack shopping e-commerce platform with a Next.js web dashboard and an Expo-powered React Native mobile app for iOS and Android. Features Firebase Auth, Firestore, and Cloud Functions, Paystack payment integration, Cloudinary-hosted product images, and WhatsApp-based order support.",
+    image: "./images/dwens.png",
+    tags: ["TypeScript", "React Native", "Next Js", "Firebase", "Paystack", "Expo", "Cloudinary"],
+    category: "full stack",
+    github: "https://github.com/imagez22/shop-public",
+    webapp: "https://shop9.online",
+  },
+
+  {
+    id: 8,
+    title: "I Studio Records - Studio Booking App",
+    date: "2025",
+    description:
+      "A studio booking web app for I Studio Records in Keta, Ghana. Artists can browse recording studios, instruments, and mixing & mastering services, read reviews, and book studio sessions through user accounts, with light and dark themes.",
+    image: "./images/istudiorecords.png",
+    tags: ["Booking System", "Authentication", "Responsive UI", "Netlify"],
+    category: "full stack",
+    webapp: "https://istudiorecords.space/",
+  },
+
+  {
     id: 1,
-    title: "Tourism Booking Platform",
+    title: "Tourism Booking Website",
     date: "2024",
     description:
-      "A full-stack tourism platform that allows users to explore destinations and book trips. Built with a modern frontend and integrated backend services for handling bookings and dynamic data. Focused on usability, scalability, and clean UI architecture.",
+      "A small tourism website built with vanilla JavaScript, HTML, and CSS, letting visitors browse tour destinations and reach out via a mailer-based inquiry flow. No backend or accounts yet — a full booking backend and React Native companion app are planned next.",
     image: "./images/toursite.png",
-    tags: ["React Js", "Node Js", "Firebase", "Material UI"],
-    category: "full stack",
+    tags: ["JavaScript", "HTML", "CSS"],
+    category: "frontend",
     github: "https://github.com/imagez22/Exe-Tours-main",
     webapp: "https://exetours.world",
-  },
-
-
-  {
-    id: 2,
-    title: "React Drum Machine",
-    date: "2023",
-    description:
-      "Interactive drum machine built with React. Features keyboard input handling, dynamic sound playback, and responsive UI. Demonstrates component-driven architecture and event handling.",
-    image: "./images/drum-machine.png",
-    tags: ["React Js", "JavaScript", "CSS"],
-    category: "frontend",
-    github:
-      "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
-    webapp: "https://codepen.io/imagez01/full/wvqdbNV/",
-  },
-
-  {
-    id: 3,
-    title: "Pomodoro Productivity Timer",
-    date: "2022",
-    description:
-      "A focus and productivity timer implementing the Pomodoro technique. Built with React and SCSS, featuring dynamic state handling and user interaction controls.",
-    image: "./images/pomodoro-clock.png",
-    tags: ["React Js", "SCSS", "JavaScript"],
-    category: "frontend",
-    github:
-      "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
-    webapp: "https://focustimer-akli.netlify.app/",
   },
 
   {
@@ -327,30 +341,17 @@ export const projects = [
   },
 
   {
-    id: 5,
-    title: "Web Calculator (React)",
+    id: 2,
+    title: "React Drum Machine",
     date: "2023",
     description:
-      "A fully functional calculator built with React, demonstrating component logic, state management, and clean UI interactions.",
-    image: "./images/web-calculator.png",
+      "Interactive drum machine built with React. Features keyboard input handling, dynamic sound playback, and responsive UI. Demonstrates component-driven architecture and event handling.",
+    image: "./images/drum-machine.png",
     tags: ["React Js", "JavaScript", "CSS"],
     category: "frontend",
     github:
       "https://github.com/imagez22/beginner-projects-and-freecodecamp-curriculum-/tree/master/Dev/Public",
-    webapp: "https://webcalculator-akli.netlify.app/",
-  },
-
-  {
-    id: 6,
-    title: "Online Store - MERN STACK",
-    date: "2025",
-    description:
-      "TileOnline Store is an Amazon-style ecommerce app built with React Native, Expo, and Firebase. Features mobile commerce flows, product browsing, and user authentication.",
-    image: mobileAppImg,
-    tags: ["React Native", "Expo", "Firebase", "Node Js", "MongoDB"],
-    category: "mobile",
-    github: "https://github.com/imagez22/amazon-clone",
-    webapp: "https://judahstore--xo202whpna.expo.app/",
+    webapp: "https://codepen.io/imagez01/full/wvqdbNV/",
   }
 ];
 
