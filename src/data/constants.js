@@ -153,6 +153,11 @@ export const experiences = [
         link: "https://shop9.online",
       },
       {
+        name: "RentGuard",
+        text: "Verified rental marketplace for rooms, apartments and suites across Ghana, with short- and long-term stays, room filters, owner property listings and Paystack-protected payments.",
+        link: "https://rentguard.website/",
+      },
+      {
         name: "I Studio Records",
         text: "Music studio booking app with user accounts, session booking, Paystack payments, reviews, a client dashboard and an admin panel for bookings, studios and instruments.",
         link: "https://istudiorecords.space/",
@@ -163,7 +168,7 @@ export const experiences = [
         link: "https://www.exetours.site",
       },
     ],
-    skills: ["TypeScript", "JavaScript", "React Js", "React Native", "Next Js", "Expo", "Node Js", "Redux", "Material UI", "Firebase", "Paystack", "Cloudinary", "Jest", "Netlify"],
+    skills: ["TypeScript", "JavaScript", "React Js", "React Native", "Next Js", "Expo", "Node Js", "Redux", "Material UI", "Firebase", "Paystack", "Cloudinary", "NextAuth", "Jest", "Netlify", "Vercel"],
   },
   {
     id: 1,
@@ -188,9 +193,9 @@ export const education = [
     id: 0,
     img: "./images/ucc.png",
     school: "University of Cape Coast, Ghana",
-    date: "Oct 2020 - May 2022",
+    date: "2017 - 2022 (Top-up)",
     grade: "3.3/4.0 CGPA",
-    desc: "I graduated  with Bachelor's degree in  Education - IT and computer Science.",
+    desc: "I graduated with a Bachelor's degree in Education - IT and Computer Science through a top-up programme.",
     degree: "Bachelor of Education - I.T and Computer Science",
   },
   {
@@ -282,6 +287,18 @@ export const projects = [
     category: "full stack",
     github: "https://github.com/imagez22/iStudioRecords",
     webapp: "https://istudiorecords.space/",
+  },
+
+  {
+    id: 9,
+    title: "RentGuard - Verified Rentals Platform",
+    date: "2026",
+    description:
+      "Rental marketplace for verified rooms, apartments and suites across Ghana. Renters search by room type and rental term, book short- or long-term stays and pay securely with Paystack, while property owners list rooms and manage them from an owner dashboard.",
+    image: "./images/rentguard.png",
+    tags: ["Next Js", "React Js", "NextAuth", "Paystack", "Vercel"],
+    category: "full stack",
+    webapp: "https://rentguard.website/",
   },
 
   {
