@@ -5,7 +5,7 @@ export const Bio = {
   ],
   platforms: "Mobile & Web",
   description:
-    "Full-stack web developer with hands-on experience building scalable, user-focused applications across web platforms. Skilled in designing responsive interfaces, developing backend services, and integrating modern tools such as Firebase and cloud-based solutions. Passionate about writing clean, maintainable code and continuously improving performance, usability, and system design. I thrive in building products from concept to deployment and delivering reliable digital solutions.",
+    "Full-stack developer building for the web and mobile. I create responsive web apps with React and Next.js, and cross-platform Android & iOS apps from a single codebase with React Native and Expo, using Expo Router for file-based navigation. On the backend I work with Node.js and Firebase. I care about clean, maintainable code, smooth performance and real usability, and I enjoy taking products from concept to deployment on both web and mobile.",
   email: "aklijoshuaericy@gmail.com",
   github: "https://github.com/imagez22",
   resume:
