@@ -138,9 +138,9 @@ export const experiences = [
   {
     id: 0,
     role: "Full-Stack Developer",
-    company: "shop9.online",
+    company: "shop9",
     date: "2025 - Present",
-    desc: "Built shop9.online, a shopping e-commerce platform spanning a Next.js web dashboard and an Expo-powered React Native mobile app (iOS & Android). Integrated Firebase Auth, Firestore, and Cloud Functions, Paystack payments, Cloudinary image hosting, and WhatsApp-based order support.",
+    desc: "Built shop9, a shopping e-commerce platform spanning a Next.js web dashboard and an Expo-powered React Native mobile app (iOS & Android). Integrated Firebase Auth, Firestore, and Cloud Functions, Paystack payments, Cloudinary image hosting, and WhatsApp-based order support.",
     skills: ["TypeScript", "React Native", "Next Js", "ReactJS", "Firebase", "Paystack", "Expo", "Cloudinary"],
     link: "https://shop9.online",
     linkText: "View Live App",
@@ -291,7 +291,7 @@ export const certifications = [
 export const projects = [
   {
     id: 7,
-    title: "shop9.online - E-Commerce Platform",
+    title: "shop9 - E-Commerce Platform",
     date: "2025",
     description:
       "Full-stack shopping e-commerce platform with a Next.js web dashboard and an Expo-powered React Native mobile app for iOS and Android. Features Firebase Auth, Firestore, and Cloud Functions, Paystack payment integration, Cloudinary-hosted product images, and WhatsApp-based order support.",
