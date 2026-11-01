@@ -5,7 +5,7 @@ export const Bio = {
   ],
   platforms: "Mobile & Web",
   description:
-    "Full-stack developer building for the web and mobile. I create responsive web apps with React and Next.js, and cross-platform Android & iOS apps from a single codebase with React Native and Expo, using Expo Router for file-based navigation. On the backend I work with Node.js and Firebase. I care about clean, maintainable code, smooth performance and real usability, and I enjoy taking products from concept to deployment on both web and mobile.",
+    "Full-stack developer building for the web and mobile. I create responsive web apps with React and Next.js, and cross-platform Android & iOS apps from a single codebase with React Native and Expo, using Expo Router for file-based navigation. On the backend I work with Node.js, Supabase and Firebase. I care about clean, maintainable code, smooth performance and real usability, and I enjoy taking products from concept to deployment on both web and mobile.",
   email: "aklijoshuaericy@gmail.com",
   github: "https://github.com/imagez22",
   resume:
@@ -92,6 +92,10 @@ export const skills = [
       {
         name: "Firebase",
         image: "./images/skills/firebase-original.svg",
+      },
+      {
+        name: "Supabase",
+        image: "./images/skills/supabase.svg",
       },
       {
         name: "Python",
