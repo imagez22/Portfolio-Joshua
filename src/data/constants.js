@@ -98,6 +98,11 @@ export const skills = [
         image: "./images/skills/supabase.svg",
       },
       {
+        name: "Resend",
+        image: "./images/skills/resend.svg",
+        mono: true,
+      },
+      {
         name: "Python",
         image: "./images/skills/python-original.svg",
       },
